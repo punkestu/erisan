@@ -28,13 +28,35 @@ namespace projekPBO_Arisan
         }
         private void initData()
         {
-            DataTable dt = parent.you.getArisan();
-            foreach(DataRow r in dt.Rows)
+            DataTable? dt = parent?.you.getArisan();
+            int i = 0;
+            foreach(DataRow? r in dt?.Rows)
             {
                 string start = System.Convert.ToInt16(r[3]) == 1 ? "started" : "stopped";
-                string roll = System.Convert.ToInt32(r[4]) == parent.you.key && start == "started"? "roll" : "disable";
+                string roll = System.Convert.ToInt32(r[4]) == parent?.you.key && start == "started"? "roll" : "disable";
                 dataGridView1.Rows.Add(r[0], r[1], r[2], start, "", "", roll, r[4]);
+                DataGridViewButtonCell c1 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[3];
+                c1.FlatStyle = FlatStyle.Flat;
+                c1.Style.SelectionBackColor = System.Drawing.Color.Blue;
+                c1.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                c1.Style.BackColor = start == "stopped" ? System.Drawing.Color.Red : System.Drawing.SystemColors.MenuHighlight;
+                DataGridViewButtonCell c2 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[4];
+                c2.FlatStyle = FlatStyle.Flat;
+                c2.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                c2.Style.BackColor = System.Drawing.SystemColors.MenuHighlight;
+                DataGridViewButtonCell c3 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[5];
+                c3.FlatStyle = FlatStyle.Flat;
+                c3.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                c3.Style.BackColor = System.Drawing.SystemColors.MenuHighlight;
+                DataGridViewButtonCell c4 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[6];
+                c4.FlatStyle = FlatStyle.Flat;
+                c4.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                c4.Style.BackColor = roll == "disable" ? System.Drawing.Color.Red : System.Drawing.SystemColors.MenuHighlight;
+                i++;
             }
+            //DataGridViewButtonCell c = (DataGridViewButtonCell)dataGridView1.Rows[0].Cells[3];
+            //c.FlatStyle = FlatStyle.Flat;
+            //c.Style.BackColor = Color.Red;
         }
 
         private void buat_Click(object sender, EventArgs e)

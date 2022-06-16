@@ -9,7 +9,7 @@ namespace Model
             {
                   try
                   {
-                        this.conn = new NpgsqlConnection("Server=localhost; Port=5432; Database=erisan; UserId=username; Password=password");
+                        this.conn = new NpgsqlConnection("Server=localhost; Port=5432; Database=erisan; UserId=postgres; Password=qonitah00");
                         this.conn.Open();
                   }
                   catch (Exception ex)

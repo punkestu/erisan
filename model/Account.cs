@@ -110,9 +110,7 @@ public class Account
                         if (dt.Rows.Count != 0)
                         {
                               Random r = new Random();
-                              int rid = 0;
-                              for (int ctr = 0; ctr <= 100; ctr++)
-                                    rid = r.Next(dt.Rows.Count);
+                              int rid = r.Next(dt.Rows.Count);
                               this.winner.addWinner(System.Convert.ToInt32(dt.Rows[rid][0]));
                               return new Kode(0, "success");
                         }

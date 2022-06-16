@@ -40,12 +40,17 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(30, 35);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "< back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
@@ -59,12 +64,15 @@
             this.admin,
             this.join,
             this.detail});
-            this.dataGridView1.Location = new System.Drawing.Point(178, 140);
+            this.dataGridView1.Location = new System.Drawing.Point(115, 139);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(450, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(570, 330);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // idarisan
@@ -79,12 +87,16 @@
             this.namaArisan.HeaderText = "Nama Arisan";
             this.namaArisan.Name = "namaArisan";
             this.namaArisan.ReadOnly = true;
+            this.namaArisan.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.namaArisan.Width = 200;
             // 
             // admin
             // 
             this.admin.HeaderText = "Admin";
             this.admin.Name = "admin";
             this.admin.ReadOnly = true;
+            this.admin.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.admin.Width = 125;
             // 
             // join
             // 

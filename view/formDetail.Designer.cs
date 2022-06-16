@@ -58,6 +58,9 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(449, 180);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
             // 
             // nama
             // 
@@ -65,6 +68,7 @@
             this.nama.HeaderText = "Nama Anggota";
             this.nama.Name = "nama";
             this.nama.ReadOnly = true;
+            this.nama.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.nama.Width = 200;
             // 
             // bayar
@@ -82,16 +86,17 @@
             // namaArisan
             // 
             this.namaArisan.AutoSize = true;
+            this.namaArisan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.namaArisan.Location = new System.Drawing.Point(71, 22);
             this.namaArisan.Name = "namaArisan";
-            this.namaArisan.Size = new System.Drawing.Size(73, 15);
+            this.namaArisan.Size = new System.Drawing.Size(97, 20);
             this.namaArisan.TabIndex = 1;
             this.namaArisan.Text = "Nama arisan";
             // 
             // admin
             // 
             this.admin.AutoSize = true;
-            this.admin.Location = new System.Drawing.Point(71, 71);
+            this.admin.Location = new System.Drawing.Point(76, 90);
             this.admin.Name = "admin";
             this.admin.Size = new System.Drawing.Size(49, 15);
             this.admin.TabIndex = 2;
@@ -100,7 +105,7 @@
             // target
             // 
             this.target.AutoSize = true;
-            this.target.Location = new System.Drawing.Point(71, 95);
+            this.target.Location = new System.Drawing.Point(76, 114);
             this.target.Name = "target";
             this.target.Size = new System.Drawing.Size(81, 15);
             this.target.TabIndex = 3;
@@ -109,7 +114,7 @@
             // tanggota
             // 
             this.tanggota.AutoSize = true;
-            this.tanggota.Location = new System.Drawing.Point(71, 120);
+            this.tanggota.Location = new System.Drawing.Point(76, 139);
             this.tanggota.Name = "tanggota";
             this.tanggota.Size = new System.Drawing.Size(94, 15);
             this.tanggota.TabIndex = 4;
@@ -118,7 +123,7 @@
             // iuran
             // 
             this.iuran.AutoSize = true;
-            this.iuran.Location = new System.Drawing.Point(312, 71);
+            this.iuran.Location = new System.Drawing.Point(317, 90);
             this.iuran.Name = "iuran";
             this.iuran.Size = new System.Drawing.Size(40, 15);
             this.iuran.TabIndex = 5;
@@ -127,7 +132,7 @@
             // mulai
             // 
             this.mulai.AutoSize = true;
-            this.mulai.Location = new System.Drawing.Point(312, 95);
+            this.mulai.Location = new System.Drawing.Point(317, 114);
             this.mulai.Name = "mulai";
             this.mulai.Size = new System.Drawing.Size(87, 15);
             this.mulai.TabIndex = 6;
@@ -136,7 +141,7 @@
             // batas
             // 
             this.batas.AutoSize = true;
-            this.batas.Location = new System.Drawing.Point(312, 119);
+            this.batas.Location = new System.Drawing.Point(317, 138);
             this.batas.Name = "batas";
             this.batas.Size = new System.Drawing.Size(85, 15);
             this.batas.TabIndex = 7;
@@ -145,7 +150,7 @@
             // start
             // 
             this.start.AutoSize = true;
-            this.start.Location = new System.Drawing.Point(71, 37);
+            this.start.Location = new System.Drawing.Point(76, 52);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(43, 15);
             this.start.TabIndex = 8;
@@ -176,9 +181,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn nama;
-        private DataGridViewCheckBoxColumn bayar;
-        private DataGridViewCheckBoxColumn menang;
         private Label namaArisan;
         private Label admin;
         private Label target;
@@ -187,5 +189,8 @@
         private Label mulai;
         private Label batas;
         private Label start;
+        private DataGridViewTextBoxColumn nama;
+        private DataGridViewCheckBoxColumn bayar;
+        private DataGridViewCheckBoxColumn menang;
     }
 }

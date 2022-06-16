@@ -22,7 +22,7 @@ namespace projekPBO_Arisan
         {
             DataRow? arisan = parent?.you.arisan?.getArisanDetail(idArisan);
             DataTable? anggota = parent?.you.anggota?.getAnggotaDetail(idArisan);
-            namaArisan.Text = "Nama Arisan : "+arisan?[0].ToString();
+            namaArisan.Text = arisan?[0].ToString();
             start.Text = "Status : "+(System.Convert.ToInt16(arisan?[1]) == 1? "Started" : "Stop");
             admin.Text =    "Admin : "+arisan?[2].ToString();
             target.Text =   "Target Arisan : " + arisan?[3].ToString();

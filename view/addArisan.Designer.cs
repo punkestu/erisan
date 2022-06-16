@@ -49,132 +49,154 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(26, 37);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(25, 35);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 0;
-            this.button1.Text = "< back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(357, 433);
+            this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(300, 454);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
+            this.button2.Size = new System.Drawing.Size(200, 40);
+            this.button2.TabIndex = 7;
             this.button2.Text = "Buat";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // namaArisan
             // 
-            this.namaArisan.Location = new System.Drawing.Point(296, 183);
+            this.namaArisan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.namaArisan.Location = new System.Drawing.Point(300, 153);
             this.namaArisan.Name = "namaArisan";
-            this.namaArisan.Size = new System.Drawing.Size(200, 23);
-            this.namaArisan.TabIndex = 2;
+            this.namaArisan.Size = new System.Drawing.Size(200, 25);
+            this.namaArisan.TabIndex = 1;
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(296, 361);
+            this.start.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.start.Location = new System.Drawing.Point(300, 357);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(200, 23);
-            this.start.TabIndex = 6;
+            this.start.Size = new System.Drawing.Size(200, 25);
+            this.start.TabIndex = 5;
             // 
             // limit
             // 
-            this.limit.Location = new System.Drawing.Point(296, 404);
+            this.limit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.limit.Location = new System.Drawing.Point(300, 408);
             this.limit.Name = "limit";
-            this.limit.Size = new System.Drawing.Size(200, 23);
-            this.limit.TabIndex = 7;
+            this.limit.Size = new System.Drawing.Size(200, 25);
+            this.limit.TabIndex = 6;
             // 
             // targetArisan
             // 
-            this.targetArisan.Location = new System.Drawing.Point(296, 230);
+            this.targetArisan.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.targetArisan.Location = new System.Drawing.Point(300, 204);
             this.targetArisan.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.targetArisan.Name = "targetArisan";
-            this.targetArisan.Size = new System.Drawing.Size(200, 23);
-            this.targetArisan.TabIndex = 8;
+            this.targetArisan.Size = new System.Drawing.Size(200, 25);
+            this.targetArisan.TabIndex = 2;
             // 
             // targetAnggota
             // 
-            this.targetAnggota.Location = new System.Drawing.Point(296, 273);
+            this.targetAnggota.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.targetAnggota.Location = new System.Drawing.Point(300, 255);
             this.targetAnggota.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.targetAnggota.Name = "targetAnggota";
-            this.targetAnggota.Size = new System.Drawing.Size(200, 23);
-            this.targetAnggota.TabIndex = 9;
+            this.targetAnggota.Size = new System.Drawing.Size(200, 25);
+            this.targetAnggota.TabIndex = 3;
             // 
             // iuran
             // 
-            this.iuran.Location = new System.Drawing.Point(296, 316);
+            this.iuran.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.iuran.Location = new System.Drawing.Point(300, 306);
             this.iuran.Maximum = new decimal(new int[] {
             2000000000,
             0,
             0,
             0});
             this.iuran.Name = "iuran";
-            this.iuran.Size = new System.Drawing.Size(200, 23);
-            this.iuran.TabIndex = 10;
+            this.iuran.Size = new System.Drawing.Size(200, 25);
+            this.iuran.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 165);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(300, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 15);
+            this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 11;
             this.label1.Text = "Nama Arisan";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 212);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(300, 181);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 15);
+            this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 12;
             this.label2.Text = "Target Arisan";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(296, 255);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(300, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 15);
+            this.label3.Size = new System.Drawing.Size(112, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Target Anggota";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(296, 298);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(300, 283);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 15);
+            this.label4.Size = new System.Drawing.Size(42, 20);
             this.label4.TabIndex = 14;
             this.label4.Text = "Iuran";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 343);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(300, 334);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.Size = new System.Drawing.Size(40, 20);
             this.label5.TabIndex = 15;
             this.label5.Text = "Start";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(296, 386);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(300, 385);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 15);
+            this.label6.Size = new System.Drawing.Size(45, 20);
             this.label6.TabIndex = 16;
             this.label6.Text = "Batas";
             // 

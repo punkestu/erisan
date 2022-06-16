@@ -25,9 +25,19 @@ namespace projekPBO_Arisan
             DataTable? dt = parent.you.arisan?.getListArisan(new Npgsql.NpgsqlParameter("start", System.Convert.ToInt32(0)));
             if (dt != null)
             {
+                int i = 0;
                 foreach (DataRow r in dt.Rows)
                 {
                     dataGridView1.Rows.Add(r[0],r[1], r[2]);
+                    DataGridViewButtonCell c1 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[3];
+                    c1.FlatStyle = FlatStyle.Flat;
+                    c1.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                    c1.Style.BackColor = System.Drawing.SystemColors.MenuHighlight;
+                    DataGridViewButtonCell c2 = (DataGridViewButtonCell)dataGridView1.Rows[i].Cells[4];
+                    c2.FlatStyle = FlatStyle.Flat;
+                    c2.Style.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+                    c2.Style.BackColor = System.Drawing.SystemColors.MenuHighlight;
+                    i++;
                 }
             }
             else
