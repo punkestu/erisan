@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="view\addArisan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="view\formDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="view\joinArisan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="view\login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="view\menu1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="view\menu2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="view\signup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "IJApWi/oBYJTin7NGiHHmZkVVhudLloUjL6iBcttcNAj16KfaZ9RwJe64q9CVnlyY7iYIBBiZZfQnNBuDAP4Og==",
+  "success": true,
+  "projectFilePath": "D:\\code\\cs\\vs\\projekPBO_Arisan\\projekPBO_Arisan.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pange\\.nuget\\packages\\npgsql\\6.0.4\\npgsql.6.0.4.nupkg.sha512",
+    "C:\\Users\\pange\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
